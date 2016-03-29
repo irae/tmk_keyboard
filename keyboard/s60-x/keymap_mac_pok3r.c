@@ -27,20 +27,20 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
 │  `  │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │▒▒▒▒▒│ Del │
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │Prev │Play │Next │     │     │     │PGDWN│ Up  │PGUP │PRTSC│SCLCK│PAUSE│     │█████│
+│     │Prev │Play │Next │     │     │     │PGDWN│ Up  │PGUP │PRTSC│SCLCK│PAUSE│Caps │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │ VoD │ VoU │ Mut │     │HOME │Left │Down │Right│ INS │ DEL │▒▒▒▒▒│     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │ APP │     │     │     │     │ END │     │     │     │     │     │▒▒▒▒▒│Caps │▒▒▒▒▒│
+│     │ APP │     │     │     │     │ END │     │     │     │     │     │▒▒▒▒▒│     │▒▒▒▒▒│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │     │█████│█████│█████│     │█████│█████│█████│     │     │ Ejc │     │█████│
 └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
      */
     KEYMAP(
      GRV,   F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12,   NO,  DEL, \
-    TRNS, MPRV, MPLY, MNXT, TRNS, TRNS, TRNS, PGUP,   UP, PGDN, PSCR, SLCK, PAUS, TRNS,       \
+    TRNS, MPRV, MPLY, MNXT, TRNS, TRNS, TRNS, PGUP,   UP, PGDN, PSCR, SLCK, PAUS, CAPS,       \
     TRNS, TRNS, VOLD, VOLU, MUTE, TRNS, HOME, LEFT, DOWN, RGHT,  INS,  DEL,   NO, TRNS,       \
-    TRNS,   NO,  APP, TRNS, TRNS, TRNS, TRNS,  END, TRNS, TRNS, TRNS, TRNS,   NO, CAPS,   NO, \
+    TRNS,   NO,  APP, TRNS, TRNS, TRNS, TRNS,  END, TRNS, TRNS, TRNS, TRNS,   NO, TRNS,   NO, \
     TRNS, TRNS, TRNS,                   TRNS,             TRNS, TRNS, EJCT, TRNS),
 };
 
