@@ -1,7 +1,7 @@
 #include "keymap_common.h"
 
 /*
- * HHKB Layout
+ * Mac Pok3r Layout
  */
 const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* 0: Default layer
@@ -14,7 +14,7 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │Shift│▒▒▒▒▒│  Z  │  X  │  C  │  V  │  B  │  N  │  M  │  ,  │  .  │  /  │▒▒▒▒▒│RSHFT│▒▒▒▒▒│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│ Fn  │ Alt │ Gui │█████│█████│█████│Space│█████│█████│█████│ Gui │ Alt │ Ejc │Ctrl │█████│
+│ Fn  │ Alt │ Gui │█████│█████│█████│Space│█████│█████│█████│ Gui │ Alt │ Pwr │Ctrl │█████│
 └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
      */
     KEYMAP(
@@ -22,26 +22,26 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      TAB,    Q,    W,    E,    R,    T,    Y,    U,    I,    O,    P, LBRC, RBRC, BSLS,       \
     LCTL,    A,    S,    D,    F,    G,    H,    J,    K,    L, SCLN, QUOT,   NO,  ENT,       \
     LSFT,   NO,    Z,    X,    C,    V,    B,    N,    M, COMM,  DOT, SLSH,   NO, RSFT,   NO, \
-     FN0, LALT, LGUI,                    SPC,             RGUI, RALT,  EJCT, RCTL),
+     FN0, LALT, LGUI,                    SPC,             RGUI, RALT,  PWR, RCTL),
     /* 1: Fn layer
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
 │  `  │ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │▒▒▒▒▒│ Del │
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │     │     │     │     │     │     │     │ Up  │     │     │     │     │     │█████│
+│     │Prev │Play │Next │     │     │     │PGDWN│ Up  │PGUP │PRTSC│SCLCK│PAUSE│     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │ VoD │ VoU │ Mut │     │     │     │Left │Down │Right│     │     │▒▒▒▒▒│     │█████│
+│     │ VoD │ VoU │ Mut │     │     │HOME │Left │Down │Right│ INS │ DEL │▒▒▒▒▒│     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │▒▒▒▒▒│Prev │Play │Next │     │     │     │     │     │     │     │▒▒▒▒▒│Caps │▒▒▒▒▒│
+│     │ APP │     │     │     │     │ END │     │     │     │     │     │▒▒▒▒▒│Caps │▒▒▒▒▒│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │     │     │█████│█████│█████│     │█████│█████│█████│     │     │     │     │█████│
+│     │     │     │█████│█████│█████│     │█████│█████│█████│     │     │ Ejc │     │█████│
 └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
      */
     KEYMAP(
      GRV,   F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12,   NO,  DEL, \
-    TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   UP, TRNS, TRNS, TRNS, TRNS, TRNS,       \
-    TRNS, VOLD, VOLU, MUTE, TRNS, TRNS, TRNS, LEFT, DOWN, RGHT, TRNS, TRNS,   NO, TRNS,       \
-    TRNS, TRNS, MPRV, MPLY, MNXT, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, DOWN,   NO, CAPS,   NO, \
-    TRNS, TRNS, TRNS,                   TRNS,             TRNS, TRNS, TRNS, TRNS),
+    TRNS, MPRV, MPLY, MNXT, TRNS, TRNS, TRNS, PGUP,   UP, PGDN, PSCR, SLCK, PAUS, TRNS,       \
+    TRNS, TRNS, VOLD, VOLU, MUTE, TRNS, HOME, LEFT, DOWN, RGHT,  INS,  DEL,   NO, TRNS,       \
+    TRNS,  APP, TRNS, TRNS, TRNS, TRNS, TRNS,  END, TRNS, TRNS, TRNS, TRNS,   NO, CAPS,   NO, \
+    TRNS, TRNS, TRNS,                   TRNS,             TRNS, TRNS, EJCT, TRNS),
 };
 
 /*
