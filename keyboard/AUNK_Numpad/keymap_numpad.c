@@ -40,4 +40,4 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KP_1,    KP_2,     KP_3,                  \
         KP_0,              KP_DOT,      KP_ENTER),
 };
-const uint16_t PROGMEM fn_actions[] = {};
+const action_t PROGMEM fn_actions[] = {};

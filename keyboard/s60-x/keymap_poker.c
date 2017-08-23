@@ -166,7 +166,7 @@ Lw: set Workman layout
 	TRNS, TRNS, TRNS, TRNS,  FN6, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, \
 	TRNS, TRNS, TRNS,                   TRNS,                   TRNS, TRNS, TRNS, TRNS),
 };
-const uint16_t PROGMEM fn_actions[] = {
+const action_t PROGMEM fn_actions[] = {
     /* Poker Layout */
     [0] = ACTION_LAYER_MOMENTARY(6),  // to Fn overlay
     [1] = ACTION_LAYER_TOGGLE(4),     // toggle arrow overlay

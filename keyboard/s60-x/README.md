@@ -2,6 +2,9 @@ S60-X keyboard firmware
 =======================
 DIY compact keyboard designed by VinnyCordeiro for Sentraq. Most of the keymaps are based on GH60 code.
 
+## WARNING!!!
+This firmware version is only for the original version of the S60-X, without LED support. If you want to customize your S60-X RGB, please refer to the [S60-X RGB section](https://github.com/VinnyCordeiro/tmk_keyboard/tree/master/keyboard/s60-x_RGB).
+
 ## Build
 Move to this directory then just run `make` like:
 
@@ -21,7 +24,11 @@ File [S60-X_pre-compiled_firmwares.zip](S60-X_pre-compiled_firmwares.zip) contai
 
 
 ## Flashing your keyboard
-The recommended program for flashing your keyboard is [Atmel FLIP](http://www.atmel.com/tools/FLIP.aspx) on Windows or [dfu-programmer](http://dfu-programmer.sourceforge.net/) on Linux (there is also a Windows version).
+The recommended programs for flashing your keyboard are [Atmel FLIP](http://www.atmel.com/tools/FLIP.aspx) (Windows) and [dfu-programmer](http://dfu-programmer.sourceforge.net/) (Linux/Windows).
+
+[QMK Firmware Flasher](https://github.com/jackhumbert/qmk_firmware_flasher/releases) may work, as the S60-X keyboard uses the ATMega32U4 microcontroller, but it is untested. Use at your own risk.
+
+[Easy AVR USB Keyboard Firmware](https://deskthority.net/wiki/Easy_AVR_USB_Keyboard_Firmware) also supports S60-X, but it is completely unrelated to TMK firmware. Use at your own risk.
 
 **Programming the firmware (Windows)**
 
