@@ -25,9 +25,9 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          FN0, LALT, LGUI,                SPC,                 RGUI, RALT, RCTL, RCTL),
     /* 1: HHKB Fn layer
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-│Power│ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │ Ins │ Del │
+│Power│ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │ F13 │ F14 │
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│Caps │MPrev│MPlay│MNext│     │     │     │     │Pscrn│Sclck│Puase│ Up  │     │ Del │█████│
+│     │MPrev│MPlay│MNext│Caps │     │     │     │Pscrn│Sclck│Puase│ Up  │ Ins │ Del │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │VolD │VolU │Mute │Eject│     │NP_* │NP_/ │Home │PgUp │Left │Right│▒▒▒▒▒│NPEnt│█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
@@ -37,8 +37,8 @@ const uint8_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
      */
     KEYMAP(
-	 PWR,   F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12,  INS,  DEL, \
-	CAPS, MPRV, MPLY, MNXT, TRNS, TRNS, TRNS, TRNS, PSCR, SLCK, PAUS,   UP, TRNS,  DEL,       \
+	 PWR,   F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12,  F13,  F14, \
+	TRNS, MPRV, MPLY, MNXT, CAPS, TRNS, TRNS, TRNS, PSCR, SLCK, PAUS,   UP,  INS,  DEL,       \
 	TRNS, VOLD, VOLU, MUTE, EJCT, TRNS, PAST, PSLS, HOME, PGUP, LEFT, RGHT, TRNS, PENT,       \
 	TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, PPLS, PMNS,  END, PGDN, DOWN, TRNS, TRNS, TRNS, \
 	TRNS, TRNS, TRNS,                   TRNS,                   TRNS, TRNS, TRNS, TRNS),
